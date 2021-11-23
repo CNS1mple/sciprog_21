@@ -4,10 +4,12 @@
 #define p 4
 #define q 3
 
+// the struct of the matrix
 struct matrix {
     int C[n][q];
 };
 
+// the function that multiply two matrices.
 struct matrix matmult(int A[n][p], int B[p][q]) {
 
     struct matrix m;

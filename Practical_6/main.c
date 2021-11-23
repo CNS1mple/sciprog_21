@@ -11,19 +11,23 @@ int main(void) {
     int B[p][q];
     struct matrix m;
 
+    // set matrix A
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < p; j++) {
             A[i][j] = i + j;
         }
     }
-
+    // set matrix B
     for(int i = 0; i < p; i++) {
         for(int j = 0; j < q; j++) {
             B[i][j] = i - j;
         }
     }
 
+    // use the function matmult to multiply the matrix A and B
     m = matmult(A, B);
+
+    // print the A, B, C
 
     printf("A: \n");
 
