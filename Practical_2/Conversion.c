@@ -27,7 +27,7 @@ int main(void) {
        
 
 /* Complete the expression */
- numdigits = i;
+   numdigits = ceil(logf(fnum)/logf(2) + 1);// The number of digits. 
    printf("The number of digits is %d\n",numdigits);
 
 
