@@ -7,19 +7,21 @@ int main(void) {
     int A[n][p];
     int B[p][q];
     int C[n][q];
-
+    // set matrix A
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < p; j++) {
             A[i][j] = i + j;
         }
     }
 
+    // set matrix B
     for(int i = 0; i < p; i++) {
         for(int j = 0; j < q; j++) {
             B[i][j] = i - j;
         }
     }
 
+    // multiply two matrices
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < q; j++) {
             int sum = 0;
@@ -29,6 +31,8 @@ int main(void) {
             C[i][j] = sum;
         }
     }
+
+    //print the matrices A, B and C
     printf("A: \n");
 
     for(int i = 0; i < n; i++) {
