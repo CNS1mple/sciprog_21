@@ -24,6 +24,7 @@ int isMagicSquare(int ** square, const int n) {
             rowSum += square[i][j];
             colSum += square[j][i];
         }
+        // if row sum or column sum is not equal to the value, it's not a magic square matrix
         if(rowSum != M || colSum != M) {
             return 0;
         }
@@ -37,6 +38,7 @@ int isMagicSquare(int ** square, const int n) {
         diagSum += square[i][i];
         secDiagSum += square[i][n-i-1];
     }
+    // if diagonal sum or secondary diagonal sum is not equal to the value, it's not a magic square matrix
     if(diagSum != M || secDiagSum != M) {
         return 0;
     }
